@@ -6,4 +6,4 @@ You can run locally by running the index.py file or by visiting the url: https:/
 
 ## The structure 
 
-The two main files are "data.py" that collects the data that is stored in the datasets folder and the "mainapp.py" which handles the interactive dashboard.
+The two main files are "data.py" that collects the data that is stored in the datasets folder and the "app.py" which handles the interactive dashboard.
