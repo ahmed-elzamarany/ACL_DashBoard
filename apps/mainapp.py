@@ -1,12 +1,11 @@
-import dash_core_components as dcc
-import dash_html_components as html
+# import dash_core_components as dcc
+# import dash_html_components as html
+from dash import dcc,html
 from dash.dependencies import Input, Output
-import plotly.express as px
 import pandas as pd
 import pathlib
 import plotly.graph_objects as go
 from app import app
-from flask_bootstrap import Bootstrap
 import dash_bootstrap_components as dbc
 
 # get relative data folder
