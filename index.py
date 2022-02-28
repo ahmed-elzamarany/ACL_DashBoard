@@ -11,20 +11,20 @@ import dash_bootstrap_components as dbc
 from apps import mainapp
 
 
-app.layout = html.Div([
-    dcc.Location(id='url', refresh=False)
+# app.layout = html.Div([
+#     dcc.Location(id='url', refresh=False)
     
-    ,html.Div(id='page-content', children=[])
-])
+#     ,html.Div(id='page-content', children=[])
+# ])
+app.layout = mainapp.layout
 
-
-@app.callback(Output('page-content', 'children'),
-              [Input('url', 'pathname')])
-def display_page(pathname):
-    if pathname == '/apps/Statistics':
-        return mainapp.layout
-    else:
-        return dbc.Button("Reviewers Statistics", href='/apps/Statistics', color="primary")
+# @app.callback(Output('page-content', 'children'),
+#               [Input('url', 'pathname')])
+# def display_page(pathname):
+#     if pathname == '/apps/Statistics':
+#         return mainapp.layout
+#     else:
+#         return dbc.Button("Reviewers Statistics", href='/apps/Statistics', color="primary")
 
 
 if __name__ == '__main__':
